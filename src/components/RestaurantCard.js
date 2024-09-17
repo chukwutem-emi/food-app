@@ -1,4 +1,4 @@
-import { CDN_URL } from "../../utils/constants";
+import { CDN_URL } from "../../utils/constant";
 const RestaurantCard = (props) => {
     const {resData} = props;
     const {
@@ -22,5 +22,16 @@ const RestaurantCard = (props) => {
     </div>
   );
 };
+export const withIsOpenLabel = (RestaurantCard) => {
+  // it will return a new component
+  return (props) => {
+    return (
+      <div>
+        <label className="absolute bg-black text-white m-2 p-2 rounded-lg">IsOpen</label>
+        <RestaurantCard {...props} />
+      </div>
+    )
+  }
+}
 
 export default RestaurantCard;
