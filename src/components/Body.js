@@ -28,7 +28,7 @@ const Body = () => {
   };
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) {
-    return(<h1 className="text-red-500 font-sans">Oops!, it looks like you're offline!!!, please check your internet connection.</h1>)
+    return(<h1 className="text-red-500 font-sans text-center mt-[10rem]">Oops!, it looks like you're offline!!!, please check your internet connection.</h1>)
   }
   // conditional rendering
   if (listOfRestaurants.length === 0) {
@@ -36,13 +36,13 @@ const Body = () => {
   }
  
     return (
-      <div className="body">
-        <div className="filter">
+      <div className="h-[100vh]">
+        <div className="filter flex">
           <div className="search">
-            <input autoComplete="on" id="search-box" type="text" className="search-box mt-8 border-2 border-solid border-blue-800" value={searchText} onChange={(e) => {
+            <input autoComplete="on" id="search-box" type="text" className="search-box mt-8 border-2 border-solid border-blue-800 ml-[2rem] p-[0.3rem] outline-none" value={searchText} onChange={(e) => {
               setSearchText(e.target.value)
             }} />
-            <button className="search-btn bg-blue-900 text-white font-sans font-bold rounded-lg" onClick={() => {
+            <button className="search-btn bg-blue-900 text-white font-sans font-bold rounded-sm p-[0.5rem]" onClick={() => {
               // filter the restaurant cards and update the UI
               // searchText
               const filteredRestaurants = listOfRestaurants.filter((res) =>
@@ -63,7 +63,7 @@ const Body = () => {
           <label className="font-sans text-lg text-blue-950">UserName: </label>
           <input type="text" className="outline-none border-blue-400 rounded-lg border-[1px] p-2 text-center" autoComplete="on" autoFocus value={loggedInUser} onChange={(e) => setUserName(e.target.value)}/>
         </div>
-        <div className="restaurant-container">
+        <div className="flex flex-wrap">
           {filteredRestaurants.map((restaurants) => (
             <Link key={restaurants.info.id} to={"/restaurant/" + restaurants.info.id }>
               {restaurants.info.isOpen? (<RestaurantCardOpen resData={restaurants}/>) :(<RestaurantCard resData={restaurants} />) }

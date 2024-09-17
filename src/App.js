@@ -19,7 +19,7 @@ import Cart from "./components/Cart";
 // lazy Loading
 // on demand loading
 // dynamix imoprt
-const Glocery = lazy(() => import("./components/Glocery"));
+const Glocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
   const [userName, setUserName] = useState();
@@ -68,13 +68,13 @@ const appRouter = createBrowserRouter([
         element:<Contact />,
       },
       {
-        path:"/glocery",
+        path:"/grocery",
         element: (
           <Suspense fallback={<h1>Loadind....</h1>}>
             <Glocery />
           </Suspense>
         )
-      }
+      },
       {
         path:"/restaurant/:resId",
         element:<RestaurantsMenu />,
