@@ -24,7 +24,7 @@ const Header = () => {
           </div>
           <div className="nav-items">
             <ul className="flex ml-[15rem]">
-              <li className="mr-8">
+              <li data-testid="status" className="mr-8">
                 Online Status: {onlineStatus ? "🟢":"🔴"}
               </li>
               <li className="mr-8">
@@ -42,7 +42,7 @@ const Header = () => {
               <li className="px-4 font-bold text-xl">
               <Link to="/cart">Cart - ({cartItems.length} items)</Link>
               </li>
-              <button className="login" onClick={() => {
+              <button data-testid="btnName" className="login" onClick={() => {
                 btnNameReact === "Login" ? setBtnNameReact("Logout") :
                 setBtnNameReact("Logout");
               }}>{btnNameReact}</button>

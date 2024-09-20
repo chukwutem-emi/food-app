@@ -1,23 +1,24 @@
 const Shimmer = () => {
     return (
-        <div className="shimmer-container">
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            <div className="shimmer-cards"></div>
-            
+        <div className="flex flex-wrap">
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
+            <div className="w-[20rem] bg-slate-400 m-8 p-20 rounded-lg h-[10rem]"></div>
         </div>
     )
 };
